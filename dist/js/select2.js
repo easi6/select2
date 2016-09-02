@@ -3099,7 +3099,7 @@ S2.define('select2/data/select',[
 
     if ($(data.element).is('option')) {
       data.element.selected = false;
-
+      data.element.removeAttribute('selected');
       this.$element.trigger('change');
 
       return;
