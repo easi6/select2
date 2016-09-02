@@ -78,7 +78,7 @@ define([
 
     if ($(data.element).is('option')) {
       data.element.selected = false;
-
+      data.element.removeAttribute('selected');
       this.$element.trigger('change');
 
       return;
